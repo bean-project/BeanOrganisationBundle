@@ -1,0 +1,39 @@
+{
+  "name": "bean-project/organisation-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony BeanOrganisationBundle",
+  "keywords": ["organisation manager","company management bundle", "bundle", "bean"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Peter Pierre",
+      "email": "peter@bean-project.org"
+    }
+  ],
+  "require": {
+    "symfony/framework-bundle": "^3.1",
+    "bean-project/core-bundle": "dev-master"
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "~2.7|~3.0"
+  },
+  "suggest": {
+    "sonata-project/doctrine-orm-admin-bundle": "~2.3",
+    "liip/imagine-bundle": "~0.9"
+  },
+  "conflict": {
+    "jms/serializer": "<0.13",
+    "sonata-project/seo-bundle": "<1.1.5",
+    "sonata-project/block-bundle": "<2.2.8"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": { "Bean\\Bundle\\OrganisationBundle\\": "" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  }
+}
